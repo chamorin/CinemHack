@@ -1,0 +1,6 @@
+#!/bin/bash
+
+airmon-ng start wlan0
+timeout 15s xterm -e airodump-ng -w scripts/NetworkScan --output-format csv --write-interval 1  wlan0mon
+airmon-ng stop wlan0mon
+sleep 5s

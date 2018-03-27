@@ -1,0 +1,5 @@
+!#/bin/bash
+
+service tor restart
+sleep 5
+proxychains firefox www.dnsleaktest.com

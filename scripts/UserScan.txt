@@ -1,0 +1,4 @@
+ 192.168.43.1    d0:ff:98:7f:97:87      1      42  HUAWEI TECHNOLOGIES CO.,LTD
+ 192.168.43.65   ec:9b:f3:39:e1:17      1      42  SAMSUNG ELECTRO-MECHANICS(THAILAND)
+
+-- Active scan completed, 2 Hosts found.

@@ -1,0 +1,594 @@
+/*Class for all pages*/
+.page{
+    -fx-background-color: black;
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+}
+
+/*Class for all buttons*/
+.button{
+    -fx-max-width: 2000px;
+    -fx-max-height: 2000px;
+    -fx-pref-width: 2000px;
+    -fx-pref-height:2000px;
+    -fx-background-size: stretch;
+    -fx-background-color: black;
+}
+
+/*Welcome page class*/
+#welcome{
+    -fx-background-image: url("Templates/Home/Home.png");
+}
+
+/*Home page class*/
+#home{
+    -fx-background-image: url("Templates/Home/Warning.png");
+}
+
+/*Menu page class*/
+#menu{
+    -fx-background-image: url("Templates/Menu/Menu_Frame.png");
+}
+
+/*Loading page class*/
+#loading{
+    -fx-background-image: url("Templates/Menu/loading.gif");
+}
+
+/*Win page class*/
+#win{
+    -fx-background-image: url("Templates/Menu/Win.png");
+}
+
+/*Lose page class*/
+#lose{
+    -fx-background-image: url("Templates/Menu/Lose.png");
+}
+
+/*MassiveScan page class*/
+#massiveScan{
+    -fx-background-image: url("Templates/Massive_Scan/Massive_Scan_Frame.png");
+}
+
+/*WifiJam page class*/
+#wifiJam{
+    -fx-background-image: url("Templates/Wifi_Jam/Wifi_Jam_Frame.png");
+}
+
+/*EvilTwin page class*/
+#evilTwin{
+    -fx-background-image: url("Templates/Evil_Twin/Evil_Twin_Frame.png");
+}
+
+/*DataStealer page class*/
+#dataStealer{
+    -fx-background-image: url("Templates/Data_Stealer/Data_Stealer_Frame.png");
+}
+
+/*PasswordCrack page class*/
+#passwordCrack{
+    -fx-background-image: url("Templates/Password_Crack/Password_Crack_Frame.png");
+}
+
+/*WifiJam advice page class*/
+#wifiJam_Advice{
+    -fx-background-image: url("Templates/Menu/wifiJam_Advice.png");
+}
+
+/*EvilTwin advice page class*/
+#evilTwin_Advice{
+    -fx-background-image: url("Templates/Menu/evilTwin_Advice.png");
+}
+
+/*DataStealer advice page class*/
+#dataStealer_Advice{
+    -fx-background-image: url("Templates/Menu/dataStealer_Advice.png");
+}
+
+/*PasswordCrack advice page class*/
+#passwordCrack_Advice{
+    -fx-background-image: url("Templates/Menu/passwordCrack_Advice.png");
+}
+
+/*Error logo*/
+#logo{
+    -fx-background-image: url("Templates/Home/Cinemhack_logo.png");
+}
+
+@font-face {
+    src: url('PressStart2P.ttf');
+}
+
+.label
+{
+    -fx-font-family: "Press Start 2P";
+}
+
+/*Label showing target network*/
+#label_Target{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ff0000;
+    -fx-alignment: center ;
+}
+
+/*Label showing error message*/
+#label_Error{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #09ff00;
+    -fx-alignment: center ;
+}
+
+/*Label showing facts during loading*/
+#label_Loading{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 125px;
+    -fx-text-fill: #ff0700;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+}
+
+/*Button leading to EvilTwin page*/
+#button_EvilTwin{
+    -fx-background-image: url("Templates/Menu/Button_Evil_Twin.png");
+}
+
+/*Button leading to MassiveScan page*/
+#button_MassiveScan{
+    -fx-background-image: url("Templates/Menu/Button_Massive_Scan.png");
+}
+
+/*Button leading to DataStealer page*/
+#button_DataStealer{
+    -fx-background-image: url("Templates/Menu/Button_Data_Stealer.png");
+}
+
+/*Button leading to WifiJam page*/
+#button_WifiJam{
+    -fx-background-image: url("Templates/Menu/Button_Wifi_Jam.png");
+}
+
+/*Button leading to PasswordCrack page*/
+#button_PasswordCrack{
+    -fx-background-image: url("Templates/Menu/Button_Password_Crack.png");
+}
+
+/*ALL BACK BUTTONS--------------------------------------------------------------------*/
+
+/*Return button Data Stealer*/
+#button_DataStealer_Back{
+    -fx-background-image: url("Templates/Data_Stealer/Data_Stealer_back.png");
+}
+
+/*Return button Evil Twin*/
+#button_EvilTwin_Back{
+    -fx-background-image: url("Templates/Evil_Twin/Evil_Twin_back.png");
+}
+
+/*Return button Password Crack*/
+#button_PasswordCrack_Back{
+    -fx-background-image: url("Templates/Password_Crack/Password_Crack_back.png");
+}
+
+/*Return button Wifi Jam*/
+#button_WifiJam_Back{
+    -fx-background-image: url("Templates/Wifi_Jam/Wifi_Jam_back.png");
+}
+
+/*Return button Massive Scan*/
+#button_MassiveScan_Back{
+    -fx-background-image: url("Templates/Massive_Scan/Massive_Scan_back.png");
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*PRESSED STATE OF ALL BUTTONS ABOVE--------------------------------------------------*/
+#button_EvilTwin:pressed{
+    -fx-background-image: url("Templates/Menu/Button_Evil_Twin_Pressed.png");
+}
+
+#button_MassiveScan:pressed{
+    -fx-background-image: url("Templates/Menu/Button_Massive_Scan_Pressed.png");
+}
+
+#button_DataStealer:pressed{
+    -fx-background-image: url("Templates/Menu/Button_Data_Stealer_Pressed.png");
+}
+
+#button_WifiJam:pressed{
+    -fx-background-image: url("Templates/Menu/Button_Wifi_Jam_Pressed.png");
+}
+
+#button_PasswordCrack:pressed{
+    -fx-background-image: url("Templates/Menu/Button_Password_Crack_Pressed.png");
+}
+/*------------------------------------------------------------------------------------*/
+
+/*DISABLE STATE OF ALL BUTTONS ABOVE--------------------------------------------------*/
+#button_EvilTwin_Disable{
+    -fx-background-image: url("Templates/Menu/Button_Evil_Twin_Disable.png");
+}
+
+#button_DataStealer_Disable{
+    -fx-background-image: url("Templates/Menu/Button_Data_Stealer_Disable.png");
+}
+
+#button_WifiJam_Disable{
+    -fx-background-image: url("Templates/Menu/Button_Wifi_Jam_Disable.png");
+}
+
+#button_PasswordCrack_Disable{
+    -fx-background-image: url("Templates/Menu/Button_Password_Crack_Disable.png");
+}
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------MASSIVE SCAN------------------------------------*/
+#MS_button_Router{
+    -fx-background-image: url("Templates/Massive_Scan/Router_Frame.png");
+    -fx-font-family: "Press Start 2P";
+    -fx-text-alignment: left;
+    -fx-font-size: 15px;
+    -fx-text-fill: #ff1d00;
+}
+
+#MS_button_Router:pressed{
+    -fx-background-image: url("Templates/Massive_Scan/Router_Frame_Pressed.png");
+}
+
+#MS_Button{
+    -fx-background-image: url("Templates/Massive_Scan/Button_To_Not_Press.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+
+}
+
+#MS_ButtonClick{
+    -fx-background-image: url("Templates/Massive_Scan/Button_To_Press.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+
+}
+
+#MS_progressbar > .bar {
+    -fx-background-color: white;
+
+}
+
+#MS_progressbar > .track {
+    -fx-text-box-border: white;
+    -fx-control-inner-background: black;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 4, 3, 2; /* 10, 9, 8 */
+}
+/*------------------------------------------------------------------------------------*/
+
+/*--------------------------------------WIFI JAM--------------------------------------*/
+#WJ_button_User{
+    -fx-background-image: url("Templates/Wifi_Jam/User_Frame.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+}
+
+#WJ_button_User:pressed{
+    -fx-background-image: url("Templates/Wifi_Jam/User_Frame_Pressed.png");
+}
+
+#WJ_button_User_Choice{
+    -fx-background-image: url("Templates/Wifi_Jam/User_Frame.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+#WJ_button_User_Choice:pressed{
+    -fx-background-image: url("Templates/Wifi_Jam/User_Frame_Pressed.png");
+}
+
+#WJ_button_Router{
+    -fx-background-image: url("Templates/Wifi_Jam/Router_Frame.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+}
+
+#WJ_button_Router:pressed{
+    -fx-background-image: url("Templates/Wifi_Jam/Router_Frame_Pressed.png");
+}
+
+#WJ_textfield{
+    -fx-background-color: #ff0000, #000000;
+    -fx-background-size: stretch;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 30px;
+    -fx-text-fill: #ff0000;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+
+}
+
+#WJ_label{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ff0000;
+    -fx-alignment: center ;
+}
+
+#WJ_progressbar > .bar {
+    -fx-background-color: red;
+    -fx-padding: 1.5em;
+}
+
+#WJ_progressbar > .track {
+    -fx-text-box-border: red;
+    -fx-control-inner-background: black;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 4, 3, 2;
+    -fx-shadow-highlight-color: transparent;
+}
+
+#WJ_scrollpane{
+    -fx-background-color: #ff0000, #000000;
+    -fx-background-size: stretch;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ff0000;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 40 40 40 40 ;
+
+}
+
+.scroll-pane {
+    -fx-background-color: black;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+    -fx-background-color: transparent;
+
+}
+
+#WJ_textarea {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #ff0000;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+
+}
+
+.text-area .content{
+    -fx-background-color: black;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*-------------------------------------EVIL TWIN--------------------------------------*/
+#ET_button_Go{
+    -fx-background-image: url("Templates/Evil_Twin/ET_Button_Frame_Go.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #b500ff;
+}
+
+#ET_button_Go:pressed{
+    -fx-background-image: url("Templates/Evil_Twin/ET_Button_Frame_Go.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #b500ff;
+}
+
+#ET_progressbar > .bar {
+    -fx-background-color: #b500ff;
+    -fx-padding: 1.5em;
+}
+
+#ET_progressbar > .track {
+    -fx-text-box-border: #b500ff;
+    -fx-control-inner-background: black;
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 4, 3, 2;
+    -fx-shadow-highlight-color: transparent;
+}
+
+#ET_textfield{
+    -fx-background-color: #b500ff, #000000;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 30px;
+    -fx-text-fill: #b500ff;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+
+    -fx-alignment: center-left ;
+}
+
+#ET_Card_Back{
+    -fx-background-image: url("Templates/Evil_Twin/Card_Back.png");
+}
+
+#ET_Card1{
+    -fx-background-image: url("Templates/Evil_Twin/Card1.png");
+}
+
+#ET_Card2{
+    -fx-background-image: url("Templates/Evil_Twin/Card2.png");
+}
+
+#ET_Card3{
+    -fx-background-image: url("Templates/Evil_Twin/Card3.png");
+}
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------DATA STEALER------------------------------------*/
+#DS_button_User{
+    -fx-background-image: url("Templates/Data_Stealer/User_Frame.png");
+    -fx-text-alignment: left;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+}
+
+#DS_button_User:pressed{
+    -fx-background-image: url("Templates/Data_Stealer/User_Frame_Pressed.png");
+}
+
+#DS_scrollpane{
+    -fx-background-color: #fe8a00, #000000;
+    -fx-background-size: stretch;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #fe8a00;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 40 40 40 40 ;
+
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+#DS_textarea {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #fe8a00;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+    -fx-highlight-fill: #09ff00;
+    -fx-highlight-text-fill: #000000;
+}
+
+#label_DataStealer{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 20px;
+    -fx-text-fill: #fe8a00;
+    -fx-alignment: center ;
+}
+
+/*------------------------------------PASSWORD CRACK------------------------------------*/
+#PC_textfield{
+
+    -fx-background-color: #00f0ff, #000000;
+    -fx-background-size: stretch;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 30px;
+    -fx-text-fill: #00f0ff;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 10 10 10 10 ;
+}
+
+#label_passwordCrack{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+    -fx-alignment: center ;
+}
+
+#PC_button_crunch_Go{
+    -fx-background-image: url("Templates/Password_Crack/PC_Button_Frame_Go.png");
+    -fx-font-family: "Press Start 2P";
+    -fx-text-alignment: left;
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+}
+
+#PC_button_wordlist_Go{
+    -fx-background-image: url("Templates/Password_Crack/PC_Button_Frame_Go.png");
+    -fx-font-family: "Press Start 2P";
+    -fx-text-alignment: left;
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+}
+
+#PC_button_Go{
+    -fx-background-image: url("Templates/Password_Crack/PC_Button_Frame_Go.png");
+    -fx-font-family: "Press Start 2P";
+    -fx-text-alignment: left;
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+}
+
+#PC_button_Go:pressed{
+    -fx-background-image: url("Templates/Password_Crack/PC_Button_Frame_Go.png");
+    -fx-font-family: "Press Start 2P";
+    -fx-text-alignment: left;
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+}
+
+/*Return button Password Crack*/
+#button_PasswordCrack_Back{
+    -fx-background-image: url("Templates/Password_Crack/Password_Crack_back.png");
+}
+
+/*Info button Password Crack*/
+#button_PasswordCrack_Info{
+    -fx-background-image: url("Templates/Password_Crack/PC_Info_Icon.png");
+    -fx-max-width: 2000px;
+    -fx-max-height: 2000px;
+    -fx-pref-width: 2000px;
+    -fx-pref-height:2000px;
+    -fx-background-size: stretch;
+    -fx-background-color: black;
+}
+
+#PC_TextField_Crunch{
+    -fx-background-color: #00f0ff, #000000;
+    -fx-background-size: stretch;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 15px;
+    -fx-text-fill: #00f0ff;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 2 2 2 2 ;
+}
+
+.slider .thumb {
+    -fx-background-color :#00f0ff;
+}
+
+.slider .track {
+    -fx-control-inner-background :#00f0ff;
+    -fx-background-insets: 0;
+}
+
+.progress-indicator {
+    -fx-progress-color: #00f0ff;
+}
+
+.progress-indicator .indicator {
+    -fx-background-color: black;
+    -fx-border-color: #00f0ff;
+}
+
+.progress-indicator .progress {
+    -fx-background-color: transparent;
+    -fx-padding: 2em;
+}

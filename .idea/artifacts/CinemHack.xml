@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="CinemHack">
+    <output-path>$PROJECT_DIR$/out/artifacts/CinemHack</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaFXApp.jar">
+        <element id="module-output" name="CinemHack" />
+      </element>
+    </root>
+  </artifact>
+</component>

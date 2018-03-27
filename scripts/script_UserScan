@@ -1,0 +1,6 @@
+#!/bin/bash
+
+GATEWAY="$(ip route show | cut -z -d " " -f 3)"
+
+netdiscover -P -N -r $GATEWAY/24 > scripts/UserScan.txt
+
