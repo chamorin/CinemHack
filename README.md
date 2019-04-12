@@ -19,6 +19,7 @@ Tel qu’il est décrit plus haut, afin de rendre l’expérience hollywoodienne
 Tous ces jeux devront être accomplis dans les temps donnés sinon le test ne sera pas exécuté.
 
 Description en détails des mini-jeux
+
 Jeu de lumière :
 Neuf lumières sont affichées en grille, elles s’allument aléatoirement, le but est simple, cliquer sur la lumière avant qu'elle ne s’éteigne. Le joueur devra obtenir un score donné avant que la limite de temps soit écoulée sans perdre trop de points de vie.
 
